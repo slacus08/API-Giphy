@@ -15,29 +15,32 @@
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-  <script src="assets/js/logic.js"></script>
+  <script src="js/logic.js"></script>
 </head>
 
 <body>
-
   <div class ="container">
     <div class="row">
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
-      <p><strong>Click my favorite musicians!</strong> </p>
+      <!-- buttons view-->
+      <div id="gifButtonsView">
       </div>
     </div>
   </div>
-
+<br>
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
-    <form id="search-form">
-          <label for="search-input">add your favorites by searching here!</label><br>
-          <input id="search-input" type="text" placeholder="get your GIPHY on...">
-          <input id="primary-button" class="button btn btn-primary" type="submit" value="submit">
-        </form>
-  </div>
 
-  <div id="results-view"></div>
+    <form id="topic-form">
+      <label for="topic-input">add your favorites by searching here!</label>
+      <input type="text" id="topic-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="primary-button" class="button btn btn-primary" type="submit" value="submit">
+    </form>
+  </div>
+  <!--Gifs view -->
+  <div id="gifsView"></div>
 
 </div>
 </body>  
